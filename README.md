@@ -1,20 +1,20 @@
-# terminalog
+# terminalogger
 
 A simple utility for clean and aesthetic logging in terminal. Especially useful for tracking machine learning metrics during training or evaluation.
 
 ### Installation
 ```
-pip install terminalog
+pip install terminalogger
 ```
-terminalog is dependent on `termcolor` package, which can be installed as follows:
+terminalogger is dependent on `termcolor` package, which can be installed as follows:
 ```
 pip install termcolor
 ```
 
 ### Usage
 ```python
-# Import TerminalLogger class from terminalog
-from terminalog import TerminalLogger
+# Import TerminalLogger class from terminalogger
+from terminalogger import TerminalLogger
 import random
 
 # Initialize logger

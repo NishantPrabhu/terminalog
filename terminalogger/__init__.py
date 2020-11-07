@@ -6,4 +6,4 @@ Author: Nishant Prabhu
 
 """
 
-from terminalog.logging import TerminalLogger
+from terminalogger.logging import TerminalLogger
