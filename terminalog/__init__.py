@@ -6,4 +6,4 @@ Author: Nishant Prabhu
 
 """
 
-from termlog.logging import TerminalLogger
+from terminalog.logging import TerminalLogger
