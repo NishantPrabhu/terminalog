@@ -107,13 +107,13 @@ class TerminalLogger:
                             fmt = '{{:.{}f}}'.format(v['precision'])
                             strings.append("[{}] {}".format(k, fmt).format(v['value']))
                         else:
-                            strings.append("[{}] {:.4f}".format(k, v['value']))
+                            strings.append("[{}] {}".format(k, def_prec).format(v['value']))
                     
                     else:
-                        strings.append("[{}] {}".format(k, ['value']))
+                        strings.append("[{}] {}".format(k, v['value']))
                 
                 elif isinstance(v, float):
-                    strings.append("[{}] {:.4f}".format(k, v))
+                    strings.append("[{}] {}".format(k, def_prec).format(v))
 
                 else:
                     strings.append("[{}] {}".format(k, v))
@@ -128,13 +128,13 @@ class TerminalLogger:
                             fmt = '{{:.{}f}}'.format(v['precision'])
                             strings.append("[{}] {} -".format(k, fmt).format(v['value']))
                         else:
-                            strings.append("[{}] {:.4f} -".format(k, v['value']))
+                            strings.append("[{}] {} -".format(k, def_prec).format(v['value']))
                     
                     else:
-                        strings.append("[{}] {} -".format(k, ['value']))
+                        strings.append("[{}] {} -".format(k, v['value']))
                 
                 elif isinstance(v, float):
-                    strings.append("[{}] {:.4f} -".format(k, v))
+                    strings.append("[{}] {} -".format(k, def_prec).format(v))
 
                 else:
                     strings.append("[{}] {} -".format(k, v))
