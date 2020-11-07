@@ -6,7 +6,7 @@ A simple utility for clean and aesthetic logging in terminal. Especially useful 
 ```
 pip install terminalog
 ```
-termlog is dependent on `termcolor` package, which can be installed as follows:
+terminalog is dependent on `termcolor` package, which can be installed as follows:
 ```
 pip install termcolor
 ```
